@@ -4,7 +4,7 @@ int main (){
     int pontoturistico;
     float area, pib, densidadep, capital;
     char cidade[60], pais[20], estado[60];
-    unsigned long int populacao;
+    unsigned int populacao;
 
         printf("Carta 1A01\n");
         
@@ -18,7 +18,7 @@ int main (){
         scanf("%s", &cidade);
 
         printf("Populacao: \n");
-        scanf("%", &populacao);
+        scanf("%u", &populacao);
 
         printf("Area: \n");
         scanf("%f", &area);
@@ -35,7 +35,7 @@ int main (){
             capital = pib/populacao;
         printf("PIB per capita: %.2f\n", capital);
 
-        printf("População: %f\n", populacao);
+        printf("População: %u\n", populacao);
         printf("area: %f\n", area);
         printf("PIB: %f\n", pib);
         printf("Pontos Turisticos: %d\n", pontoturistico);
