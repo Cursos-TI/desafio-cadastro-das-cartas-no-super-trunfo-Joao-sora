@@ -6,15 +6,17 @@ int main (){
     char cidade[60], pais[20], estado[60];
     unsigned long int populacao;
 
-        printf("Carta 1A01\n");
+        printf("---Registre sua carta---\n");
+    
+        printf("Carta 1\n");
         
-        printf("Pais: \n");
+        printf("Pais: (um número de 1 a 10)\n");
         scanf("%s", &pais);
 
-        printf("Estado: \n");
+        printf("Estado: (uma letra de A a H)\n");
         scanf("%s", &estado);
 
-        printf("Cidade: \n");
+        printf("Cidade: (um número de 1 a 4)\n");
         scanf("%s", &cidade);
 
         printf("Populacao: \n");
@@ -35,10 +37,14 @@ int main (){
             capital = pib/populacao;
         printf("PIB per capita: %.2f\n", capital);
 
+        printf("---Dados Gerais da Carta---");
+
         printf("População: %lu\n", populacao);
-        printf("area: %f\n", area);
-        printf("PIB: %f\n", pib);
+        printf("area: %f Km*2\n", area);
+        printf("PIB: %f bilhões de reais\n", pib);
         printf("Pontos Turisticos: %d\n", pontoturistico);
+
+        printf(
 
 
     return 0;
