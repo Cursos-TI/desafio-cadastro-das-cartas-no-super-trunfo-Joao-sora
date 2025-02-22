@@ -3,7 +3,7 @@
 int main (){
     int pontoturistico;
     float area, pib, densidadep, capital;
-    char cidade[60], pais[20], estado[60];
+    char cidade[60], pais[20], estado[60], city[35];
     unsigned long int populacao;
 
         printf("---Registre sua carta---\n");
@@ -18,6 +18,10 @@ int main (){
 
         printf("Cidade: (um número de 1 a 4)\n");
         scanf("%s", &cidade);
+
+        printf("Nome da cidade: %s\n", city);
+        fgets("city, 35, stdin");
+        city[strcspn(city, "\n")] = 0;
 
         printf("Populacao: \n");
         scanf("%lu", &populacao);
@@ -37,14 +41,16 @@ int main (){
             capital = pib/populacao;
         printf("PIB per capita: %.2f\n", capital);
 
-        printf("---Dados Gerais da Carta---");
+        printf("\n---Dados Gerais da Carta---\n");
 
-        printf("População: %lu\n", populacao);
-        printf("area: %f Km*2\n", area);
-        printf("PIB: %f bilhões de reais\n", pib);
+        printf("Cidade: %s\n", city);
+
+        printf("População: %.21lu\n", populacao);
+        printf("area: %.2f Km*2\n", area);
+        printf("PIB: %.15f bilhões de reais\n", pib);
         printf("Pontos Turisticos: %d\n", pontoturistico);
-
-        printf(
+        printf("PIB per capita: %.2f per capita\n", capital);
+        printf("Densidade populacional: %.2f por Km^2\n", densidadep);
 
 
     return 0;
